@@ -1,0 +1,67 @@
+#conteneur{
+  position: relative;
+}
+#conteneur #eye{
+  position: relative;   
+  margin-left: 95%;
+  font-size: 150%;
+  right: 3%;
+  bottom: 40px;
+  color: black;
+  cursor: pointer;
+}
+#eye{
+position: fixed;
+cursor: pointer;
+}
+
+section div div div h3{
+text-align: left;
+color:dark;
+font-weight: bolder;
+}
+section div div div p{
+text-align: center;
+color:dark;
+}
+*{
+font-family:system-ui,'Open Sans','Times New Roman', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,'Helvetica Neue', sans-serif
+}
+footer{
+  margin-top:20%;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  color:white;
+  background-color:#232222;
+}
+footer #div_footer a{
+  text-decoration: none;
+  font-weight: bolder;
+  font-size:xx-large;
+  color:white;
+}
+footer #div_footer{
+  background-color:#686666;
+}
+footer div div div p{
+  font-weight: bolder;
+}
+footer div div div ul li a{
+  text-decoration: none;
+  color: white;
+}
+footer div div div ul li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+footer div div div ul li{
+  list-style-type: none;
+  text-align: justify;
+}
+footer div div div ul{
+  margin-left: 5%;
+}
+footer div #fin_footer{
+  background-color: #686666;
+}
