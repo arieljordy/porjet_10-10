@@ -1,18 +1,33 @@
-let eyeChange=document.getElementById("eye");
-        let passwordInput = document.getElementById("mdp");
-        eyeChange.addEventListener('click',function(){
-          if(passwordInput.type==="password"){
-            passwordInput.type="text"
-            eyeChange.className="bi bi-eye-slash-fill"
-          }else{
-            passwordInput.type="password"
-            eyeChange.className="bi bi-eye-fill"
-          }
-        })
+//Tous ce qui est en rapport avec les mots de passe
 
+let eyeChange=document.getElementById("eye");
+let passwordInput = document.getElementById("mdp");
+passwordInput.addEventListener("input",() =>{
+  if(passwordInput.value===""){
+    eyeChange.className=""
+  }else if(passwordInput.type==="password"){
+    eyeChange.className="bi bi-eye-fill"
+  }
+})
+eyeChange.addEventListener("click",() =>{
+    if(passwordInput.type==="password"){
+      passwordInput.type="text"
+      eyeChange.className="bi bi-eye-slash-fill"
+    }else{
+      passwordInput.type="password"
+      eyeChange.className="bi bi-eye-fill"
+    }
+  })
+
+function eyeOff(){
+  eyeChange.className=""
+  passwordInput.type="password"
+}
         document.querySelector("#fermer").addEventListener('click',()=>{
             passwordInput.value=""
             document.getElementById("email").value=""
+            eyeChange.className=""
+            passwordInput.type="password"
         })
          let h3 = "SUPERBES",bas="BASKETS",i=0,j=0,id=ad=null;
          let p = "La Bonne Qualité",au = "au Prix de vos rêves"

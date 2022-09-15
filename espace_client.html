@@ -14,26 +14,24 @@
     <script src="espace_client.js" defer></script>
 </head>
 <body>
-    <section>
+    <section style="background: url('images_&_logo_du_site/logo_jaune.png') center no-repeat;
+    background-size:contain;width:100%;height:100vh">
         <div class="container-fluid text-start">
             <a href="acceuil.html" style="font-size: 2rem;" title="retour à l'acceuil"><i class="bi bi-arrow-90deg-left"></i></a>
-            <br>
-            <div row=class="row align-items-center" style="background: url('images_&_logo_du_site/logo_jaune.png') center no-repeat;
-    background-size:contain;width:100%;height:100vh">
-<br>
+            <div class="row align-items-center" id="banner_form">
 <form class="row g-3" action="" method="post">
     <div class="col-md-4">
       <label for="nom" class="form-label"><b>Nom:</b></label>
       <input type="text" class="form-control is-invalid" name="nom" id="nom" required>
       <div class="valid-feedback">
-        Looks good!
+        Cela semble bon!
       </div>
     </div>
     <div class="col-md-4">
       <label for="prenom" class="form-label"><b>Prénom:</b></label>
       <input type="text" class="form-control is-invalid" name="prenom" id="prenom" value="" required>
       <div class="valid-feedback">
-        Looks good!
+        Cela semble bon!
       </div>
     </div>
     <div class="col-md-4">
@@ -55,22 +53,23 @@
       </div>
 
       <div class="col-12 position-relative">
-        <label for="mdp" class="form-label"><b>votre mot de passe entre [8-20] caractères:</b></label>
+        <label for="mdp" class="form-label"><b>votre mot de passe entre [8-25] caractères:</b></label>
         <div class="input-group has-validation">        
-          <input type="password" class="form-control" name="mdp" id="mdp" minlength="8" maxlength="20" required>
-          <span class="input-group-text"><i class="bi bi-eye-fill"  id="eye"></i></span>
+          <input type="password" class="form-control" name="mdp" id="mdp" minlength="8" maxlength="25" required>
+          <span class="input-group-text" style="width:45px"><i class="" id="eye"></i></span>
         </div>
       </div>
       <!-- <div class="row"> -->
         <div class="col-6">
-            <button class="btn btn-success w-100" type="submit">soumettre</button>
+            <button class="btn btn-success w-100" type="submit">s'inscrire</button>
           </div>
           <div class="col-6">
-              <button class="btn btn-danger w-100" type="reset">tout effacer</button>
+              <button class="btn btn-danger w-100" onclick="eyeOff()" type="reset">effacer</button>
             </div>
+            <br>
       <!-- </div>  -->
   </form>
-
+<p></p><p></p>
             </div>
         </div>
     </section>

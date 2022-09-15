@@ -15,7 +15,7 @@
 </head>
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light  fixed-top" style="background-color: #232222;">
             
             <div class="container-fluid">
                 
@@ -47,10 +47,10 @@
                     <a class="nav-link" href="#"  style="color: white">À PROPOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"  style="color: white">CONTACTS</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"  style="color: white">Déconnecté</a>
                   </li>                  
                 </ul>
-                <div class="col"><marquee><h2 style="color:white">dix sur dix SHOP</h2></marquee></div>
+                <div class="col"><marquee><h2 style="color:rgb(226, 194, 49)"><img src="images_&_logo_du_site/logo_jaune.png" width="50" alt="dix sur dix shop"> SHOP</h2></marquee></div>
                 <!-- <form class="d-flex">
                   <input class="form-control me-1" type="search" placeholder="votre recherche" aria-label="Search">
                   <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
@@ -71,19 +71,18 @@
                                     </label>
                                     <input type="email" name="email" id="email" class="form-control" placeholder="exemple@gmail.com" maxlength="50" required>
                                 </div>
-                                
-                              
-                              <div class="col-12" id="conteneur">
-                                <label for="password" class="form-label"> <b>votre mot de passe entre [8-20] caractères:</b> 
-                                </label>
-                                <input type="password" name="password" id="mdp" class="form-control" minlength="8" maxlength="20">
-                                <i class="bi bi-eye-fill" id="eye"></i>
-                              </div>
+                                <div class="col-12 position-relative">
+                                  <label for="mdp" class="form-label"><b>votre mot de passe entre [8-25] caractères:</b></label>
+                                  <div class="input-group has-validation">        
+                                    <input type="password" class="form-control" name="mdp" id="mdp" minlength="8" maxlength="25" required>
+                                    <span class="input-group-text" style="width:45px"><i class=""  id="eye"></i></span>
+                                  </div>
+                                </div>
                               <div class="col-6">
                                 <input type="submit" class="btn btn-success w-100" name="soumettre" value="connexion">
                               </div>
                               <div class="col-6">
-                                <input type="reset" class="btn btn-danger w-100"value="tout effacer">
+                                <input type="reset" class="btn btn-danger w-100" onclick="eyeOff()" value="effacer">
                               </div>
                               <p style="text-align:justify;">En passant votre commande, <a href="">les Conditions générales de vente de dix sur dix.</a> vous acceptez  Veuillez consulter <a href="">notre Notice Protection de vos informations personnelles,</a> notre Notice Cookies et notre Notice Annonces publicitaires basées sur vos centres d’intérêt.</p>
                               <i class="bi bi-caret-right-fill"><a href=""style="text-decoration:none;">Avez-vous besoin d’aide ?</a></i>
@@ -117,7 +116,7 @@
         <section>
           <div class="container-fluid text-start"><br><br>
             <div class="row align-items-center" style="background: url('images_&_logo_du_site/fond.jpg') center no-repeat;
-            background-size:contain;width:100%">
+            background-size:contain;width:100">
               <div class="col">
                 <h3 class="fw-bolder" id="h3_defilant"></h3>
                 <p class="fw-bolder" id="paragraphe_defilant"></p>
@@ -193,7 +192,7 @@
           <div class="row align-items-center">
               <div class="col"></div>
               <div class="col">
-                  <img src="images_&_logo_du_site/logo_jaune.png" alt="logo 10/10" width="60%" height="100%">
+                  <img src="images_&_logo_du_site/logo_jaune.png" alt="logo 10/10" width="100">
               </div>
               <div class="col"></div>
           </div><br>
