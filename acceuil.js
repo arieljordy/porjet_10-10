@@ -7,6 +7,8 @@ passwordInput.addEventListener("input",() =>{
     eyeChange.className=""
   }else if(passwordInput.type==="password"){
     eyeChange.className="bi bi-eye-fill"
+  }else if(passwordInput.type==="text"){
+    eyeChange.className="bi bi-eye-slash-fill"
   }
 })
 eyeChange.addEventListener("click",() =>{
@@ -31,6 +33,7 @@ function eyeOff(){
         })
          let h3 = "SUPERBES",bas="BASKETS",i=0,j=0,id=ad=null;
          let p = "La Bonne Qualité",au = "au Prix de vos rêves"
+
 // titre h3 
  
               id = setInterval(function(){
@@ -38,7 +41,7 @@ function eyeOff(){
                 document.getElementById("h3_defilant").innerHTML+=h3.charAt(i)
                 i++
               }else{
-                clearInterval(id)
+                clearTimeout(id)
                 document.getElementById("h3_defilant").innerHTML+="<br>"
               }
             },50)
@@ -52,6 +55,7 @@ function eyeOff(){
             }, 2000)
     
 // paragraphe
+
 let k=0;let l=0;
 ad = setInterval(function(){
               if(k<p.length){

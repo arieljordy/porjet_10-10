@@ -7,6 +7,8 @@ passwordInput.addEventListener("input",() =>{
     eyeChange.className=""
   }else if(passwordInput.type==="password"){
     eyeChange.className="bi bi-eye-fill"
+  }else if(passwordInput.type==="text"){
+    eyeChange.className="bi bi-eye-slash-fill"
   }
 })
 eyeChange.addEventListener("click",() =>{
