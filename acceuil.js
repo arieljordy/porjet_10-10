@@ -73,4 +73,4 @@ ad = setInterval(function(){
                   l++
                 }
               },30)
-            }, 2000)
+            }, 3000)
