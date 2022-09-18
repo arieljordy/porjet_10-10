@@ -43,16 +43,17 @@ function eyeOff(){
               }else{
                 clearTimeout(id)
                 document.getElementById("h3_defilant").innerHTML+="<br>"
+                clearInterval(id)
               }
-            },50)
+            },250)
             setTimeout(() => {
               setInterval(() => {
                 if(j<bas.length){
                   document.getElementById("h3_defilant").innerHTML+=bas.charAt(j)
                   j++
                 }
-              },50)
-            }, 2000)
+              },250)
+            }, 3000)
     
 // paragraphe
 
@@ -64,13 +65,14 @@ ad = setInterval(function(){
               }else{
                 clearInterval(ad)
                 document.getElementById("paragraphe_defilant").innerHTML+="<br>"
+                clearInterval(ad)
               }
-            },50)
+            },80)
             setTimeout(() => {
               setInterval(() => {
                 if(l<au.length){
                   document.getElementById("paragraphe_defilant").innerHTML+=au.charAt(l)
                   l++
                 }
-              },30)
-            }, 3000)
+              },50)
+            }, 4000)
