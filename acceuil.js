@@ -76,3 +76,16 @@ ad = setInterval(function(){
                 }
               },50)
             }, 4000)
+            
+function checkEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+document.getElementById("email").addEventListener("input",()=>{
+    if(document.getElementById("email").value != "" && checkEmail(document.getElementById("email").value)){
+        document.getElementById("email").className="form-control is-valid"
+    }else{
+        document.getElementById("email").className="form-control is-invalid"
+    }
+})
