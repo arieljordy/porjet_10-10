@@ -34,14 +34,14 @@ function eyeOff(){
          let h3 = "SUPERBES",bas="BASKETS",i=0,j=0,id=ad=null;
          let p = "La Bonne Qualité",au = "au Prix de vos rêves"
 
-// titre h3 
+// titre h3 qui s'écrit seul
  
               id = setInterval(function(){
-              if(i<h3.length){
+              if(i<h3.length && document.getElementById("h3_defilant")!=h3){
                 document.getElementById("h3_defilant").innerHTML+=h3.charAt(i)
                 i++
               }else{
-                clearTimeout(id)
+                clearInterval(id)
                 document.getElementById("h3_defilant").innerHTML+="<br>"
                 clearInterval(id)
               }
@@ -55,11 +55,11 @@ function eyeOff(){
               },250)
             }, 3000)
     
-// paragraphe
+// paragraphe qui s'écrit seul
 
 let k=0;let l=0;
 ad = setInterval(function(){
-              if(k<p.length){
+              if(k<p.length && document.getElementById("paragraphe_defilant")!=p){
                 document.getElementById("paragraphe_defilant").innerHTML+=p.charAt(k)
                 k++
               }else{
