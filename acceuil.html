@@ -27,12 +27,12 @@
               
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-1">
                   <li class="nav-item">
-                    <a class="nav-link active lien_nav" aria-current="page" href="" target="_blank">ACCEUIL</a>
+                    <a class="nav-link active" aria-current="page" href="" style="color:white;">ACCEUIL</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle lien_nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
                      BOUTIQUE
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -40,14 +40,19 @@
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#chaussures">Chaussures</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#vêtements">vêtements</a></li>
+                      <li><a class="dropdown-item" href="#vetements">vêtements</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link lien_nav" href="#">À PROPOS</a>
+                    <a class="nav-link" href="#" style="color:white;">À PROPOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"  style="color: white">Déconnecté</a>
+                    <a class="nav-link" style="color:white;" href="espace_client.html">S'INSCRIRE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"  style="color: white">
+                      déconnecté
+                    </a>
                   </li>                  
                 </ul>
                 <div class="col"><marquee><h2 style="color:rgb(226, 194, 49)"><img src="images_&_logo_du_site/logo_jaune.png" width="50" alt="dix sur dix shop"> SHOP</h2></marquee></div>
@@ -70,6 +75,9 @@
                                     <label for="email" class="form-label"> <b> votre adresse e-mail:</b>
                                     </label>
                                     <input type="email" name="email" id="email" class="form-control" placeholder="exemple@gmail.com" maxlength="50" required>
+                                    <div class="valid-feedback">
+                                      Cela semble correcte!
+                                    </div> 
                                 </div>
                                 <div class="col-12 position-relative">
                                   <label for="mdp" class="form-label"><b>votre mot de passe entre [8-25] caractères:</b></label>
@@ -89,7 +97,6 @@
                               <hr>
                               <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Nouveau chez dix sur dix ?</a>
                               <a type="button" class="btn btn-outline-primary" href="espace_client.html" id="inscription">Créer votre compte dix sur dix gratuitement</a>
-
                             </form>
                         </div>       
                     </div>
@@ -148,7 +155,7 @@
     </main>
     <footer>
       <div id="div_footer">
-          <a href="#header"><i class="bi bi-arrow-up-circle-fill" title="retour en haut"></i></a>
+          <a href="#header"><i class="bi bi-chevron-up" title="retour en haut"></i></a>
       </div><br>
       <div class="container-fluid">
           <div class="row align-items-center">

@@ -24,6 +24,7 @@ eyeChange.addEventListener("click",() =>{
 function eyeOff(){
   eyeChange.className=""
   passwordInput.type="password"
+  document.getElementById("email").className="form-control is-invalid"
 }
         document.querySelector("#fermer").addEventListener('click',()=>{
             passwordInput.value=""
@@ -31,19 +32,17 @@ function eyeOff(){
             eyeChange.className=""
             passwordInput.type="password"
         })
-         let h3 = "SUPERBES",bas="BASKETS",i=0,j=0,id=ad=null;
+         let h3 = "SUPERBES",bas="BASKETS",i=0,j=0,ad=null;
          let p = "La Bonne Qualité",au = "au Prix de vos rêves"
 
 // titre h3 qui s'écrit seul
  
-              id = setInterval(function(){
+            setInterval(function(){
               if(i<h3.length && document.getElementById("h3_defilant")!=h3){
                 document.getElementById("h3_defilant").innerHTML+=h3.charAt(i)
                 i++
-              }else{
-                clearInterval(id)
+              }else if(document.getElementById("h3_defilant").innerHTML===h3){
                 document.getElementById("h3_defilant").innerHTML+="<br>"
-                clearInterval(id)
               }
             },250)
             setTimeout(() => {
@@ -62,8 +61,7 @@ ad = setInterval(function(){
               if(k<p.length && document.getElementById("paragraphe_defilant")!=p){
                 document.getElementById("paragraphe_defilant").innerHTML+=p.charAt(k)
                 k++
-              }else{
-                clearInterval(ad)
+              }else if(document.getElementById("paragraphe_defilant").innerHTML===p){
                 document.getElementById("paragraphe_defilant").innerHTML+="<br>"
                 clearInterval(ad)
               }

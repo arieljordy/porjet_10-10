@@ -27,8 +27,6 @@ eyeChange.addEventListener("click",() =>{
 function eyeOff(){
   eyeChange.className=""
   passwordInput.type="password"
-  // document.getElementById("prenom").className="form-control is-invalid"
-  // document.getElementById("pseudo").className="form-control is-invalid"
   document.getElementById("nom").className="form-control is-invalid"
   document.getElementById("email").className="form-control is-invalid"
 }

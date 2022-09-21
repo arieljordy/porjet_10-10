@@ -1,14 +1,3 @@
-nav div div ul li .lien_nav{
-  background-color: #686666;
-  transition: all 1s ease-out;
-  border-radius: 5px;
-  border: 1px solid #fff;
-  margin: 1px;
-}
-nav div div ul li .lien_nav:hover,
-nav div div ul li .lien_nav:focus{
-  background-color: #232222;
-}
 #paragraphe_defilant{
   animation-duration: 4s;
   animation-name: versLaGauche;
