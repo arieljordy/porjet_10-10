@@ -87,3 +87,150 @@ document.getElementById("email").addEventListener("input",()=>{
         document.getElementById("email").className="form-control is-invalid"
     }
 })
+
+//animation qui fait grandir les images quand on les survole
+// document.getElementById("chaussure_homme")
+//         .style.display=`inline-block`
+// document.getElementById("chaussure_homme")
+//         .style.border=0
+// document.getElementById("chaussure_homme")
+//         .style.position=`relative`
+// document.getElementById("chaussure_homme")
+//         .style.WebkitTransition=`all 200ms ease-in`
+// document.getElementById("chaussure_homme")
+//         .style.WebkitTransform=`scale(1)`
+// document.getElementById("chaussure_homme")
+//         .style.MsTransition=`all 200ms ease-in`
+// document.getElementById("chaussure_homme")
+//         .style.MsTransform=`scale(1)`
+// document.getElementById("chaussure_homme")
+//         .style.MozTransition=`all 200ms ease-in`
+// document.getElementById("chaussure_homme")
+//         .style.MozTransform=`scale(1)`
+// document.getElementById("chaussure_homme")
+//         .style.transition=`all 200ms ease-in`
+// document.getElementById("chaussure_homme")
+//         .style.transform=`scale(1)`
+
+// document.getElementById("chaussure_femme")
+//         .style.display=`inline-block`
+// document.getElementById("chaussure_femme")
+//         .style.border=0
+// document.getElementById("chaussure_femme")
+//         .style.position=`relative`
+// document.getElementById("chaussure_femme")
+//         .style.WebkitTransition=`all 200ms ease-in`
+// document.getElementById("chaussure_femme")
+//         .style.WebkitTransform=`scale(1)`
+// document.getElementById("chaussure_femme")
+//         .style.MsTransition=`all 200ms ease-in`
+// document.getElementById("chaussure_femme")
+//         .style.MsTransform=`scale(1)`
+// document.getElementById("chaussure_femme")
+//         .style.MozTransition=`all 200ms ease-in`
+// document.getElementById("chaussure_femme")
+//         .style.MozTransform=`scale(1)`
+// document.getElementById("chaussure_femme")
+//         .style.transition=`all 200ms ease-in`
+// document.getElementById("chaussure_femme")
+//         .style.transform=`scale(1)`
+
+document.getElementById("chaussure_homme").addEventListener(`mouseover`,()=>{
+  document.getElementById("chaussure_homme")
+    .style.boxShadow=`0px 0px 12px #232222`
+  document.getElementById("chaussure_femme")
+    .style.zIndex="1"  
+  document.getElementById("chaussure_homme")
+    .style.zIndex="2"
+  document.getElementById("chaussure_homme")
+    .style.WebkitTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.WebkitTransform=`scale(1.5)`
+  document.getElementById("chaussure_homme")
+    .style.MsTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.MsTransform=`scale(1.5)`
+  document.getElementById("chaussure_homme")
+    .style.MozTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.MozTransform=`scale(1.5)`
+  document.getElementById("chaussure_homme")
+    .style.transition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.transform=`scale(1.5)`
+})
+
+document.getElementById("chaussure_femme").addEventListener(`mouseover`,()=>{
+  document.getElementById("chaussure_femme")
+    .style.boxShadow=`0px 0px 12px #232222`
+  document.getElementById("chaussure_homme")
+    .style.zIndex="1"
+  document.getElementById("chaussure_femme")
+    .style.zIndex="2"
+  document.getElementById("chaussure_femme")
+    .style.WebkitTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.WebkitTransform=`scale(1.5)`
+  document.getElementById("chaussure_femme")
+    .style.MsTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.MsTransform=`scale(1.5)`
+  document.getElementById("chaussure_femme")
+    .style.MozTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.MozTransform=`scale(1.5)`
+  document.getElementById("chaussure_femme")
+    .style.transition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.transform=`scale(1.5)`
+})
+
+document.getElementById("chaussure_homme").addEventListener(`mouseout`,()=>{
+  document.getElementById("chaussure_homme")
+    .style.display=`inline-block`
+  document.getElementById("chaussure_homme")
+    .style.border="0"
+  document.getElementById("chaussure_homme")
+    .style.position=`relative`
+  document.getElementById("chaussure_homme")
+    .style.WebkitTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.WebkitTransform=`scale(1)`
+  document.getElementById("chaussure_homme")
+    .style.MsTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.MsTransform=`scale(1)`
+  document.getElementById("chaussure_homme")
+    .style.MozTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.MozTransform=`scale(1)`
+  document.getElementById("chaussure_homme")
+    .style.transition=`all 200ms ease-in`
+  document.getElementById("chaussure_homme")
+    .style.transform=`scale(1)`
+})
+
+document.getElementById("chaussure_femme").addEventListener(`mouseout`,()=>{
+  document.getElementById("chaussure_femme")
+    .style.display=`inline-block`
+  document.getElementById("chaussure_femme")
+    .style.border="0"
+  document.getElementById("chaussure_femme")
+    .style.position=`relative`
+  document.getElementById("chaussure_femme")
+    .style.WebkitTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.WebkitTransform=`scale(1)`
+  document.getElementById("chaussure_femme")
+    .style.MsTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.MsTransform=`scale(1)`
+  document.getElementById("chaussure_femme")
+    .style.MozTransition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.MozTransform=`scale(1)`
+  document.getElementById("chaussure_femme")
+    .style.transition=`all 200ms ease-in`
+  document.getElementById("chaussure_femme")
+    .style.transform=`scale(1)`
+})
