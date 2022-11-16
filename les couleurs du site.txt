@@ -1,9 +1,0 @@
-orange ----> #f1be15;
-
-gris  ----> #686666;
-
-noir ----->#232222;
-
-jaune ----->#ffde59
-
-<h1 class="elementor-heading-title elementor-size-default">Gagnez plusieurs millions grâce à INTERNET </h1>

@@ -1,0 +1,88 @@
+*{
+    font-family:system-ui,'Open Sans','Times New Roman', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,'Helvetica Neue', sans-serif;
+  }
+  
+  #paragraphe_defilant{
+    animation-duration: 4s;
+    animation-name: versLaGauche;
+  }
+  
+  @keyframes versLaGauche {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  #h3_defilant{
+    animation-duration: 3s;
+    animation-name: versLeHaut;
+  }
+  
+  @keyframes versLeHaut {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
+  #eye{
+  cursor: pointer;
+  font-size: 20px;
+  } 
+  
+section div div div h3{
+  text-align: left;
+  color:dark;
+  font-weight: bolder;
+  }
+section div div div p{
+  text-align: center;
+  color:dark;
+  }
+div ol li i{
+    font-size: 2rem;
+    margin:2rem;
+    cursor: pointer;
+}
+div ol li a{
+    text-decoration: none;
+    color:#232222;
+}
+div ol li a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    color:#232222;
+}
+  
+footer{
+    width:100%;
+    height: 100%;
+    text-align:center;
+    color:white;
+    background-color:#232222;
+  }
+
+footer div div div a{
+    text-decoration: none;
+    color: white;
+}
+footer div div div a:hover{
+    text-decoration: underline;
+    color: white;
+}
+footer div div div ul li{
+    list-style-type: none;
+    text-align: justify;
+}
+footer p{
+    text-align:justify;
+}

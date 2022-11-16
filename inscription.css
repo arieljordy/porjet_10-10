@@ -1,12 +1,4 @@
 #eye{
     font-size: 20px;
-    cursor: pointer;
-}
-#banner_form{
-    border:2px #232222 solid;
-    border-radius: 20px;
-    margin-left: 12%;
-    margin-right: 12%;
-    text-align: center;
-    box-shadow: 20px 20px 12px #232222;
+    cursor:pointer;
 }
