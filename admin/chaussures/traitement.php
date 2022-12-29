@@ -1,7 +1,7 @@
 <?php
 session_start();
 require("config.php");
-if(isset($_FILES["image"]) && isset($_FILES["image"]["error"])==0 && isset($_POST["nom"]) && isset($_POST["prix"]) && isset($_POST["quantite"])){
+if(isset($_FILES["image"]) && $_FILES["image"]["error"]==0 && isset($_POST["nom"]) && isset($_POST["prix"]) && isset($_POST["quantite"])){
     if ($_FILES["image"]["size"] <= 3000000){
         $fileInfo = pathinfo($_FILES["image"]["name"]);
         $extension = $fileInfo["extension"];
